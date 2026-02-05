@@ -1,4 +1,7 @@
 # MeDocVL
+
+![MeDocVL Comparison Bar](assets/MeDocVL-Comparison%20Bar.png)
+
 official repo of "MeDocVL: A Visual Language Model for Medical Document Understanding and Parsing"
 
 ## Abstract
