@@ -1,6 +1,6 @@
 # MeDocVL
 
-
+![MeDocVL Comparison Bar](assets/MeDocVL-Comparison%20Bar.png)
 *Comparison of query-driven document parsing performance.*
 *Public model is trained exclusively on publicly available datasets, while Extended model is trained with additional non-public data to study the effect of increased training data scale.*
 
