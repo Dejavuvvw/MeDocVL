@@ -10,7 +10,9 @@ Our framework combines **Training-driven Label Refinement** to construct high-qu
 
 
 # Dataset
-We re-annotated the invoices from the [Alibaba Cloud Tianchi invoice dataset](https://tianchi.aliyun.com/dataset/131815) to align with our internally labeled, proprietary data. We then reproduced our method on this dataset.
+We evaluate our method on a publicly available medical invoice dataset released by [Alibaba Cloud](https://tianchi.aliyun.com/dataset/131815). The dataset contains 800 real-world medical billing documents collected from diverse scenarios, with 700 images used for training and 100 for testing.
+
+To better reflect practical application requirements, we re-annotated the dataset by refining and expanding field definitions while preserving the original document content and fixed data split. Semantically redundant fields are consolidated, and additional fine-grained fields commonly required in real-world medical invoice processing are introduced. The same re-annotated labels and experimental settings are applied to all baselines and our method, ensuring a fair and controlled comparison with full reproducibility.
 
 In this setup, Stage 1 contains 700 samples, and Stage 2 contains 100 samples. To simulate realistic annotation noise, we introduced artificial noise into the manually labeled Stage 1 dataset, with a noise ratio of 30%.
 - stage 1 with human-annotated label: `dataset/a_li_yun_medical_train_stage1.jsonl`
